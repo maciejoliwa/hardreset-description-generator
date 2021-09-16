@@ -1,0 +1,1 @@
+{:output-to "../application/js/release/gen.js", :output-dir "../application/js/release", :optimizations :advanced, :verbose true}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Description Generator</title>
+</head>
+
+<body>
+  <section class="container">
+
+    <div class="modal">
+      <div class="message">
+
+      </div>
+      <button class="ok">Ok</button>
+    </div>
+
+    <select name="" id="" class="description-type-select">
+      <option value="game">Game</option>
+      <option value="benchmark">Benchmark</option>
+    </select>
+
+    <div class="devices">
+
+    </div>
+
+    <button class="save">
+      Save Changes
+    </button>
+
+    <button class="add-device">
+      Add device
+    </button>
+    <form class="description-form">
+
+
+      <div class="input-wrapper">
+        <label for="">Device</label>
+        <input type="text" name="device" required>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">Link</label>
+        <input type="text" name="link" required>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">CPU Type</label>
+        <input type="text" name="cpu" required>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">RAM Size</label>
+        <input type="number" min="0" name="ram" required>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">Spec</label>
+        <textarea required name="spec" class='textarea' cols="19" rows="10"></textarea>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">Amount of HowTos</label>
+        <input type="number" min="5" value="5" name="amount" required>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="">Hashtags</label>
+        <input type="text" name="hashtags" required>
+      </div>
+
+      <input type="submit" class='submit' value="Generate">
+
+    </form>
+  </section>
+
+  <script src="./js/release/gen.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
